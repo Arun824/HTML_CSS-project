@@ -1,0 +1,132 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+} 
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 1100px;
+    height: 70%;  
+} 
+
+.title {
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.toggle-switch{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: black; 
+}
+
+.toggler{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 25px;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.toggler::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+    right:4px;
+}
+
+.toggler:checked:before{
+    right: 55%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card{
+    height: 500px;
+    width: 32%;
+    background-color: #22262C; 
+    border-radius: 15px;
+    padding: 2rem;
+    transition: 1s;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.card-price{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h2>span{
+    font-size: 1rem;
+}
+
+
+.card ul li{
+    margin-bottom: 2rem;
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px solid #f4f4f4; 
+    padding-inline-start:0;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.card-btn{
+    margin-top: 1rem;
+    width: 100%;
+     background-color: blue; 
+    border: 1px solid #bc1e4a;
+    color:white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.card:hover {
+    background-color: blue;
+    transform: scale(1.1)
+}
+
+#card-1 .card-btn:hover, 
+#card-2 .card-btn:hover, 
+#card-3 .card-btn:hover
+{
+    transform: scale(1.1)
+}
+
